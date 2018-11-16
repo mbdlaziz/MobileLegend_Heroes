@@ -1,3 +1,5 @@
+/** @format */
+
 import { Navigation } from 'react-native-navigation';
 
 import { registerScreens } from './screens';
@@ -13,13 +15,29 @@ Navigation.startTabBasedApp({
       icon: require('./img/one.png'),
       // selectedIcon: require('../img/one_selected.png'), // iOS only
       title: 'Home',
+      navigatorStyle: {
+        navBarHidden: true
+      }
     },
     {
       label: 'Heroes',
       screen: 'tab.Heroes',
-      icon: require('./img/one.png'),
+      icon: require('./img/heroes.png'),
       // selectedIcon: require('../img/two_selected.png'), // iOS only
       title: 'Heroes',
+      navigatorStyle: {
+        navBarHidden: true
+      }
     },
+    // {
+    //   label: 'Settings',
+    //   screen: 'tab.Settings',
+    //   icon: require('./img/one.png'),
+    //   // selectedIcon: require('../img/two_selected.png'), // iOS only
+    //   title: 'Settings',
+    //   navigatorStyle: {
+    //     navBarHidden: true
+    //   }
+    // },
   ]
 });
